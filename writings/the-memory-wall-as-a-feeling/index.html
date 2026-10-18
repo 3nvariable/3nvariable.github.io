@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f4ec">
+  <meta name="description" content="You can feel the memory wall before you can measure it. A note by 3nvariable.">
+  <title>The Memory Wall, as a Feeling — 3nvariable</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#content">skip the front matter →</a>
+
+  <header class="masthead">
+    <div class="masthead-top">
+      <a class="brand" href="/"><span class="three">3</span>nvariable</a>
+      <p class="running">ms. 3n-var · folio 3</p>
+    </div>
+    <nav class="nav" aria-label="Site">
+      <a href="/">3nvariable</a>
+      <a href="/writings/" aria-current="page"><span class="v">w</span> writings</a>
+      <a href="/projects/"><span class="v">p</span> projects</a>
+      <a href="https://x.com/computeunits" target="_blank" rel="noopener noreferrer"><span class="v">x</span> @computeunits<span class="ext" aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    </nav>
+  </header>
+
+  <main class="page" id="content">
+
+    <div class="art-head">
+      <p class="kicker">w — writings · note [1]</p>
+      <h1 class="art-title">The Memory Wall, as a Feeling</h1>
+      <p class="dateline">filed 30 sep 2026 · 6 min · <a href="/writings/">all writings</a></p>
+    </div>
+
+    <div class="prose">
+      <p class="dropcap">You can feel the memory wall before you can measure it. It arrives as a slackness in the profiler: the cores are lit, the tensor units are warm, and the timeline is a hallway of narrow green rectangles with air between them. Nothing is wrong. Everything is waiting.</p>
+
+      <p>The textbook says the wall is a ratio, not a barrier — how many operations you can do for every byte you can move. The feeling says otherwise. A barrier you can plan around. A ratio you can only grieve around.</p>
+
+      <div class="eq">
+        <span class="math">I = F / B</span>
+        <span class="tag">(1)</span>
+      </div>
+      <aside class="note">operations per byte: the exchange rate between hope and bandwidth.</aside>
+
+      <p>I have stopped explaining to people why their model is slow. The honest sentence is not about the model. The honest sentence is: your matmul is fine, the memory is a shared driveway, and everyone on the block owns a truck.<sup class="fnref" id="fnref-1"><a href="#fn-1" aria-describedby="fn-1">1</a></sup> Nothing in that sentence can be patched, and all of it can be drawn as a roofline.</p>
+
+      <p>Notes for the next revision of this note: roofline plots as weather maps; the eight-second rule for prefetch despair; a taxonomy of stalls that reads like the stages of grief, because it is one.</p>
+
+      <span class="qed" aria-hidden="true">■</span>
+    </div>
+
+    <section class="footnotes" aria-label="Footnotes">
+      <ol>
+        <li id="fn-1">Since you ask: the driveway metaphor has survived every generation of memory. The trucks get wider too. <a class="back" href="#fnref-1" aria-label="Back to reference 1">↩</a></li>
+      </ol>
+    </section>
+
+    <p class="asterism" aria-hidden="true">⁂</p>
+
+    <div class="prose">
+      <p class="postscript"><a href="/writings/a-taxonomy-of-idle-cycles/">Read next: A Taxonomy of Idle Cycles</a> — what the air between the rectangles is doing.</p>
+    </div>
+
+  </main>
+
+  <footer class="colophon">
+    <p class="flops" id="flops">this page has burned ≈ 0 flops on your behalf</p>
+    <p>set in STIX Two Text &amp; IBM Plex Mono · no build step · <i>n</i> remains unknown</p>
+    <p class="tiny">© 2026 3nvariable</p>
+  </footer>
+
+  <script src="/assets/main.js" defer></script>
+</body>
+</html>

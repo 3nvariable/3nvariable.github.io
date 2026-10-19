@@ -2,6 +2,5 @@
 
 A manuscript in three variables. Plain HTML, no build step, served by GitHub Pages from `main`.
 
-- Typefaces: Sinistre ([Collletttivo](https://collletttivo.it), OFL) for display, Zodiak ([Fontshare](https://www.fontshare.com), ITF Free Font License) for text, Departure Mono ([Freefaces](https://www.freefaces.gallery/typefaces/departure-mono), OFL) for the machine voice. Self-hosted in `assets/fonts/`, licences next to the files.
-- Theme: "night shift" — a blue-black sky, a lit horizon, faint scanlines, one signal-orange accent, sidenotes in the margin, a ⌘K go-to menu and `w` / `p` / `x` keys.
-- Inspiration: the horizon and bordered chips from [ghost.ai](https://ghost.ai), sidenotes from [gwern.net](https://gwern.net), the keyboard-first hints from [omarchy.us](https://omarchy.us), the big outlined wordmark footer from [footer.design](https://www.footer.design), the terminal 404 from [404s.design](https://www.404s.design).
+- Typefaces: Sinistre ([Collletttivo](https://collletttivo.it), OFL) for display, Zodiak ([Fontshare](https://www.fontshare.com), ITF Free Font License) for text and drop caps, Departure Mono ([Freefaces](https://www.freefaces.gallery/typefaces/departure-mono), OFL) for the machine voice. Sinistre and Departure Mono are self-hosted in `assets/fonts/` with their licences. Zodiak loads from Fontshare's own CDN (`api.fontshare.com`), so this public repo does not hold its font files.
+- Theme: a math manuscript about itself — cream paper, ink, one red pencil, numbered sections, framed equations, margin notes and footnotes. `w` / `p` / `x` and ⌘K move between pages from the keyboard.

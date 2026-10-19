@@ -1,4 +1,4 @@
-// 3nvariable — the colophon counter, the ⌘K menu, and the three keys.
+// 3nvariable — the colophon counter, the ⌘K list of pages, and the three keys.
 (function () {
   // A playful estimate, not a measurement: assume idling on this page costs
   // the machine about 1.7 million flops per second. Not peer reviewed.
@@ -87,8 +87,6 @@
     }
   });
 
-  document.querySelectorAll("[data-cmdk]").forEach(function (b) { b.addEventListener("click", open); });
-
   document.addEventListener("keydown", function (e) {
     if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") { e.preventDefault(); open(); return; }
     if (dialog.open || e.metaKey || e.ctrlKey || e.altKey) return;
@@ -98,17 +96,4 @@
     else if (e.key === "p") location.href = "/projects/";
     else if (e.key === "x") window.open(X, "_blank", "noopener");
   });
-
-  // Fade sections in as they enter the screen.
-  var reveals = document.querySelectorAll(".reveal");
-  if ("IntersectionObserver" in window) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) {
-        if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
-      });
-    }, { rootMargin: "0px 0px -8% 0px" });
-    reveals.forEach(function (el) { io.observe(el); });
-  } else {
-    reveals.forEach(function (el) { el.classList.add("in"); });
-  }
 })();

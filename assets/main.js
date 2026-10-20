@@ -18,7 +18,7 @@
     setInterval(tick, 1000);
   }
 
-  var X = "https://x.com/computeunits";
+  var X = "https://x.com/3nvariable";
   var items = [
     ["3nvariable", "/", "home"],
     ["writings", "/writings/", "w"],
@@ -26,7 +26,7 @@
     ["A Taxonomy of Idle Cycles", "/writings/a-taxonomy-of-idle-cycles/", "essay [2]"],
     ["Solve for n", "/writings/solve-for-n/", "remark [3]"],
     ["projects", "/projects/", "p"],
-    ["@computeunits on X", X, "x ↗"]
+    ["@3nvariable on X", X, "x ↗"]
   ];
 
   var dialog = document.createElement("dialog");
